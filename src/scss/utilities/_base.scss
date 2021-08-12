@@ -13,28 +13,12 @@
 body {
     position: relative;
 
-    height: 100vh;
-
     background-color: $red;
-
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-
-        width: 100%;
-        height: 100%;
-
-        background-image: url("/src/images/bg-intro-mobile.png");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-
-        @media screen and (min-width: 768px) {
-            background-image: url("/src/images/bg-intro-desktop.png");
-        }
-
-        z-index: -1;
+    background-image: url("/src/images/bg-intro-mobile.png");
+    background-position: center;
+    background-size: cover;
+    
+    @media screen and (min-width: 768px) {
+        background-image: url("/src/images/bg-intro-desktop.png");
     }
 }
