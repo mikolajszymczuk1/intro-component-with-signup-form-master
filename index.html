@@ -25,7 +25,76 @@
 </head>
 
 <body>
-    <h1>Hello World !!!</h1>
+    <!-- ====== Main app content ====== -->
+    <main class="main-section">
+        <!-- Intro component -->
+        <section class="intro" aria-label="intro component">
+            <!-- Title and undertitle -->
+            <div class="intro__text-part">
+                <h1 class="intro__title">Learn to code by <br> watching others</h1>
+                <p class="intro__under-title">
+                    See how experienced developers solve problems in real-time.
+                    Watching scripted tutorials is great, but understanding how developers think is invaluable.
+                </p>
+            </div>
+
+            <!-- Try it button and simple form -->
+            <div class="intro__form-part">
+                <button class="intro__try-it-button"><b>Try it free 7 days</b> then $20/mo. thereafter</button>
+                
+                <form class="intro__form" action="#" method="POST">
+                    <!-- First Name -->
+                    <div class="intro__input-container">
+                        <div class="intro__input-wrapper">
+                            <input class="intro__input" type="text" placeholder="First Name">
+                            <img class="intro__error-icon" src="/src/svg/icon-error.svg" alt="Error icon image" title="Error icon">
+                        </div>
+
+                        <div class="intro__error-message"></div>
+                    </div>
+
+                    <!-- Last Name -->
+                    <div class="intro__input-container">
+                        <div class="intro__input-wrapper">
+                            <input class="intro__input" type="text" placeholder="Last Name">
+                            <img class="intro__error-icon" src="/src/svg/icon-error.svg" alt="Error icon image" title="Error icon">
+                        </div>
+
+                        <div class="intro__error-message"></div>
+                    </div>
+
+                    <!-- Email Address -->
+                    <div class="intro__input-container">
+                        <div class="intro__input-wrapper">
+                            <input class="intro__input" type="email" placeholder="Email Address">
+                            <img class="intro__error-icon" src="/src/svg/icon-error.svg" alt="Error icon image" title="Error icon">
+                        </div>
+
+                        <div class="intro__error-message"></div>
+                    </div>
+
+                    <!-- Password -->
+                    <div class="intro__input-container">
+                        <div class="intro__input-wrapper">
+                            <input class="intro__input" type="password" placeholder="Password">
+                            <img class="intro__error-icon" src="/src/svg/icon-error.svg" alt="Error icon image" title="Error icon">
+                        </div>
+
+                        <div class="intro__error-message"></div>
+                    </div>
+                    
+                    <!-- Submit -->
+                    <input class="intro__submit-button" type="submit" value="CLAIM YOUR FREE TRIAL">
+
+                    <!-- Agreeing text -->
+                    <p class="intro__agreeing-text">
+                        By clicking the button, you are agreeing to our <span class="intro__colored-text">Terms and Services</span>
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- ====== END Main app content ====== -->
 
     <!-- Scripts -->
     <script type="module" src="/src/js/validation.js"></script>
