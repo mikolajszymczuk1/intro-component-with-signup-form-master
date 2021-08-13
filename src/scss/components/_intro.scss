@@ -13,6 +13,32 @@
 
     font-family: $poppins;
 
+    @media screen and (min-width: 600px) {
+        width: 70%;
+    }
+
+    @media screen and (min-width: 1024px) {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        width: 80%;
+    }
+
+    @media screen and (min-width: 1440px) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        margin: 0;
+
+        transform: translate(-50%, -50%);
+    }
+
+    @media screen and (min-width: 1600px) {
+        width: 1100px;
+    }
+
     // ====== Text Part ======
     &__text-part {
         margin-bottom: 60px;
@@ -20,24 +46,53 @@
         color: white;
         text-align: center;
         text-shadow: 0 0 3px rgba($dark-blue, 0.5);
+
+        @media screen and (min-width: 1024px) {
+            flex-basis: 50%;
+
+            margin: 0 20px 0 0;
+        }
     }
 
     &__title {
         margin-bottom: 20px;
+
+        @media screen and (min-width: 600px) {
+            font-size: 2.5em;
+            line-height: 50px;
+        }
+
+        @media screen and (min-width: 1024px) {
+            margin-bottom: 30px;
+            
+            text-align: start;
+        }
+
+        @media screen and (min-width: 1440px) {
+            text-align: start;
+            font-size: 3em;
+        }
     }
 
     &__under-title {
         opacity: 0.9;
         font-weight: 500;
+
+        @media screen and (min-width: 1024px) {
+            text-align: start;
+        }
     }
 
     // ====== Form Part ======
     &__form-part {
-        
+        @media screen and (min-width: 1024px) {
+            flex-basis: 50%;
+        }
     }
 
     &__try-it-button {
         margin-bottom: 25px;
+        padding: 18px 60px;
 
         width: 100%;
 
@@ -45,8 +100,8 @@
         border-radius: 10px;
         outline: none;
         border: none;
-        padding: 20px 60px;
         box-shadow: 0 8px rgba($dark-blue, 0.2);
+        cursor: pointer;
 
         color: white;
         font-size: 1em;
@@ -60,10 +115,18 @@
         background-color: white;
         border-radius: 10px;
         box-shadow: 0 8px rgba($dark-blue, 0.25);
+
+        @media screen and (min-width: 1440px) {
+            padding: 35px;
+        }
     }
 
     &__input-container {
         margin-bottom: 18px;
+
+        @media screen and (min-width: 1440px) {
+            margin-bottom: 20px;
+        }
     }
 
     &__input-wrapper {
@@ -85,6 +148,10 @@
         font-family: $poppins;
         color: $dark-blue;
         font-weight: 600;
+
+        @media screen and (min-width: 1024px) {
+            padding: 18px 30px;
+        }
     
         &:focus {
             border-color: $dark-blue;
@@ -131,6 +198,10 @@
         font-weight: 600;
         font-style: italic;
         color: $red;
+
+        @media screen and (min-width: 1024px) {
+            font-size: 0.9em;
+        }
     }
 
     &__submit-button {
@@ -142,6 +213,8 @@
         outline: none;
         border: none;
         border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 0 5px rgba($green, 0.8);
 
         color: rgba(white, 0.9);
         font-size: 1em;
