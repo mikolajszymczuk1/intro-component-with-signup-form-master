@@ -214,7 +214,7 @@
         border: none;
         border-radius: 5px;
         cursor: pointer;
-        box-shadow: 0 5px rgba($green, 0.8);
+        box-shadow: 0 4px rgba($dark-green, 0.9);
 
         color: rgba(white, 0.9);
         font-size: 1em;
@@ -222,6 +222,10 @@
         font-weight: 600;
         letter-spacing: 1px;
         text-shadow: 0 0 3px rgba($dark-blue, 0.3);
+
+        &:hover {
+            background-color: rgba($green, 0.9);
+        }
     }
 
     &__agreeing-text {
